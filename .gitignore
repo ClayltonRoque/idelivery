@@ -45,3 +45,7 @@ Thumbs.db
 .nuxt
 .nitro
 .cache
+
+# Next.js
+.next
+out

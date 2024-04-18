@@ -1,0 +1,19 @@
+name: Deploy FakeApi to Vercel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        run: vercel -t ${{ secrets.VERCEL_TOKEN }} --local-config ./apps/fake-api/vercel.json
