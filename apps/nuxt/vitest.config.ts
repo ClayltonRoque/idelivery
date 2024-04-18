@@ -5,7 +5,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/idelivery',
+  cacheDir: '../../node_modules/.vite/apps/nuxt',
 
   plugins: [vue(), nxViteTsPaths()],
 
@@ -24,7 +24,7 @@ export default defineConfig({
 
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/apps/idelivery',
+      reportsDirectory: '../../coverage/apps/nuxt',
       provider: 'v8',
     },
   },

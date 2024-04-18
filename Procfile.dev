@@ -1,0 +1,2 @@
+nuxt: npx nx serve nuxt
+fake-api: npx nx serve fake-api

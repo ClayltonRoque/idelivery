@@ -1,0 +1,52 @@
+[
+  {
+    "nome": "Restaurante Italiano Bella Napoli",
+    "status": "aberto",
+    "imagem": "https://cdn.example.com/restaurantes/bella-napoli.jpg",
+    "menu": [
+      {
+        "nome": "Pizza Margherita",
+        "descricao": "Pizza tradicional italiana com molho de tomate, muçarela fresca e manjericão.",
+        "preco": 25.9,
+        "imagem": "https://cdn.example.com/menu/pizza-margherita.jpg"
+      },
+      {
+        "nome": "Pasta Carbonara",
+        "descricao": "Massa fresca com molho cremoso de queijo, bacon crocante e pimenta preta.",
+        "preco": 18.5,
+        "imagem": "https://cdn.example.com/menu/pasta-carbonara.jpg"
+      },
+      {
+        "nome": "Tiramisu",
+        "descricao": "Sobremesa clássica italiana feita com camadas de biscoitos embebidos em café, queijo mascarpone e cacau em pó.",
+        "preco": 8.9,
+        "imagem": "https://cdn.example.com/menu/tiramisu.jpg"
+      }
+    ]
+  },
+  {
+    "nome": "Sushi Master",
+    "status": "fechado",
+    "imagem": "https://cdn.example.com/restaurantes/sushi-master.jpg",
+    "menu": [
+      {
+        "nome": "Sashimi Misto",
+        "descricao": "Seleção de sashimis frescos de salmão, atum e peixe branco.",
+        "preco": 35.9,
+        "imagem": "https://cdn.example.com/menu/sashimi-misto.jpg"
+      },
+      {
+        "nome": "Tempura de Camarão",
+        "descricao": "Camarões frescos empanados e fritos servidos com molho de gengibre.",
+        "preco": 22.5,
+        "imagem": "https://cdn.example.com/menu/tempura-camarao.jpg"
+      },
+      {
+        "nome": "Sushi Combo",
+        "descricao": "Combinação de sushis e nigiris variados.",
+        "preco": 28.9,
+        "imagem": "https://cdn.example.com/menu/sushi-combo.jpg"
+      }
+    ]
+  }
+]
