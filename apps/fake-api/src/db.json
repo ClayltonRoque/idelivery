@@ -375,6 +375,76 @@
       ]
     }
   ],
+  "pedidos": [
+    {
+      "id": 1,
+      "cliente": "João da Silva",
+      "total": 50.0,
+      "subtotal": 55.0,
+      "total_desconto": 5.0,
+      "itens": [
+        {
+          "nome": "Pizza Margherita",
+          "preco": 25.0,
+          "quantidade": 2
+        },
+        {
+          "nome": "Coca-Cola",
+          "preco": 5.0,
+          "quantidade": 1
+        }
+      ],
+      "status": "aprovado",
+      "status_entrega": "pendente"
+    },
+    {
+      "id": 2,
+      "cliente": "Maria Souza",
+      "total": 70.0,
+      "subtotal": 77.0,
+      "total_desconto": 7.0,
+      "itens": [
+        {
+          "nome": "Hamburguer",
+          "preco": 15.0,
+          "quantidade": 2
+        },
+        {
+          "nome": "Batata Frita",
+          "preco": 10.0,
+          "quantidade": 2
+        },
+        {
+          "nome": "Água Mineral",
+          "preco": 2.0,
+          "quantidade": 3
+        }
+      ],
+      "status": "confirmado",
+      "status_entrega": "em_transito"
+    },
+    {
+      "id": 3,
+      "cliente": "Ana Oliveira",
+      "total": 25.0,
+      "subtotal": 28.0,
+      "total_desconto": 3.0,
+      "itens": [
+        {
+          "nome": "Café Expresso",
+          "preco": 3.0,
+          "quantidade": 2
+        },
+        {
+          "nome": "Pão de Queijo",
+          "preco": 5.0,
+          "quantidade": 3
+        }
+      ],
+      "status": "cancelado",
+      "status_entrega": "cancelado"
+    }
+  ],
   "profile": {
     "nome": "João da Silva",
     "email": "joao.silva@example.com",
