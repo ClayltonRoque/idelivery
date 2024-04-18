@@ -1,9 +1,394 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" },
-    { "id": 4, "title": "Post 4" },
-    { "id": 5, "title": "Post 5" }
-  ]
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Italiana"
+    },
+    {
+      "id": 2,
+      "nome": "Japonesa"
+    },
+    {
+      "id": 3,
+      "nome": "Brasileira"
+    }
+  ],
+  "restaurantes": [
+    {
+      "id": 1,
+      "nome": "Restaurante Italiano Bella Napoli",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/bella-napoli.jpg",
+      "categoria": {
+        "id": 1,
+        "nome": "Italiana"
+      },
+      "menu": [
+        {
+          "nome": "Pizza Margherita",
+          "descricao": "Pizza tradicional italiana com molho de tomate, muçarela fresca e manjericão.",
+          "preco": 25.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Pasta Carbonara",
+          "descricao": "Massa fresca com molho cremoso de queijo, bacon crocante e pimenta preta.",
+          "preco": 18.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Tiramisu",
+          "descricao": "Sobremesa clássica italiana feita com camadas de biscoitos embebidos em café, queijo mascarpone e cacau em pó.",
+          "preco": 8.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Sushi Master",
+      "status": "fechado",
+      "imagem": "https://cdn.example.com/restaurantes/sushi-master.jpg",
+      "categoria": {
+        "id": 2,
+        "nome": "Japonesa"
+      },
+      "menu": [
+        {
+          "nome": "Sashimi Misto",
+          "descricao": "Seleção de sashimis frescos de salmão, atum e peixe branco.",
+          "preco": 35.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Tempura de Camarão",
+          "descricao": "Camarões frescos empanados e fritos servidos com molho de gengibre.",
+          "preco": 22.5,
+          "desconto": 0.5
+        },
+        {
+          "nome": "Sushi Combo",
+          "descricao": "Combinação de sushis e nigiris variados.",
+          "preco": 28.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Churrascaria do Gaúcho",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/churrascaria-gaucho.jpg",
+      "categoria": {
+        "id": 3,
+        "nome": "Brasileira"
+      },
+      "menu": [
+        {
+          "nome": "Picanha",
+          "descricao": "Picanha grelhada na brasa acompanhada de farofa, arroz, feijão tropeiro e mandioca cozida.",
+          "preco": 39.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Costela de Porco",
+          "descricao": "Costela de porco assada lentamente e marinada com molho barbecue, servida com batatas rústicas.",
+          "preco": 28.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Caipirinha",
+          "descricao": "Bebida alcoólica brasileira feita com cachaça, limão e açúcar.",
+          "preco": 12.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Restaurante Vegetariano Green Leaf",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/green-leaf.jpg",
+      "categoria": {
+        "id": 4,
+        "nome": "Vegetariana"
+      },
+      "menu": [
+        {
+          "nome": "Hambúrguer de Quinoa",
+          "descricao": "Hambúrguer vegetariano feito com quinoa, cenoura e abobrinha, servido com batatas fritas.",
+          "preco": 17.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Salada Mediterrânea",
+          "descricao": "Salada fresca com alface, tomate, pepino, azeitonas, queijo feta e molho de iogurte.",
+          "preco": 12.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Mousse de Chocolate",
+          "descricao": "Sobremesa vegana feita com chocolate amargo e creme de coco.",
+          "preco": 9.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Padaria Pão Quente",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/pao-quente.jpg",
+      "categoria": {
+        "id": 5,
+        "nome": "Padaria"
+      },
+      "menu": [
+        {
+          "nome": "Pão Francês",
+          "descricao": "Pão francês fresco e crocante.",
+          "preco": 3.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Bolo de Fubá",
+          "descricao": "Bolo caseiro de fubá com erva-doce.",
+          "preco": 8.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Café Expresso",
+          "descricao": "Café expresso curto e forte.",
+          "preco": 4.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Restaurante Mexicano La Fiesta",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/la-fiesta.jpg",
+      "categoria": {
+        "id": 6,
+        "nome": "Mexicana"
+      },
+      "menu": [
+        {
+          "nome": "Tacos de Carne",
+          "descricao": "Tacos mexicanos com carne de porco desfiada, abacate, coentro e molho de pimenta.",
+          "preco": 19.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Burrito de Frango",
+          "descricao": "Burrito recheado com frango, arroz, feijão, queijo e guacamole.",
+          "preco": 15.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Churros",
+          "descricao": "Sobremesa espanhola feita com massa frita, açúcar e canela.",
+          "preco": 7.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Restaurante Indiano Taj Mahal",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/taj-mahal.jpg",
+      "categoria": {
+        "id": 7,
+        "nome": "Indiana"
+      },
+      "menu": [
+        {
+          "nome": "Curry de Frango",
+          "descricao": "Frango cozido lentamente em molho de curry com especiarias indianas.",
+          "preco": 21.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Samosa",
+          "descricao": "Pastel indiano recheado com batata, ervilhas e especiarias.",
+          "preco": 10.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Lassi de Manga",
+          "descricao": "Bebida indiana feita com iogurte, manga e especiarias.",
+          "preco": 6.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Restaurante Árabe Aladdin",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/aladdin.jpg",
+      "categoria": {
+        "id": 8,
+        "nome": "Árabe"
+      },
+      "menu": [
+        {
+          "nome": "Kebab de Cordeiro",
+          "descricao": "Espetinhos de cordeiro grelhados com especiarias árabes, servidos com arroz e salada.",
+          "preco": 29.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Falafel",
+          "descricao": "Bolinhos fritos de grão-de-bico temperados com especiarias, servidos com molho de tahine.",
+          "preco": 14.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Baklava",
+          "descricao": "Sobremesa árabe feita com massa folhada, nozes e mel.",
+          "preco": 8.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Restaurante Tailandês Bangkok",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/bangkok.jpg",
+      "categoria": {
+        "id": 9,
+        "nome": "Tailandesa"
+      },
+      "menu": [
+        {
+          "nome": "Pad Thai",
+          "descricao": "Prato tailandês de macarrão de arroz frito com camarão, tofu, amendoim e limão.",
+          "preco": 18.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Curry Verde",
+          "descricao": "Curry tailandês com leite de coco, frango, berinjela e manjericão.",
+          "preco": 16.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Mango Sticky Rice",
+          "descricao": "Sobremesa tailandesa de arroz glutinoso com manga fresca e leite de coco.",
+          "preco": 9.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Restaurante Francês La Baguette",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/la-baguette.jpg",
+      "categoria": {
+        "id": 10,
+        "nome": "Francesa"
+      },
+      "menu": [
+        {
+          "nome": "Croque Monsieur",
+          "descricao": "Sanduíche francês de presunto e queijo gratinado.",
+          "preco": 14.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Coq au Vin",
+          "descricao": "Frango cozido lentamente em vinho tinto com cogumelos e cebolas.",
+          "preco": 26.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Crème Brûlée",
+          "descricao": "Sobremesa francesa de creme de baunilha com açúcar caramelizado.",
+          "preco": 10.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Restaurante Espanhol El Toro",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/el-toro.jpg",
+      "categoria": {
+        "id": 11,
+        "nome": "Espanhola"
+      },
+      "menu": [
+        {
+          "nome": "Paella Valenciana",
+          "descricao": "Prato espanhol de arroz com frutos do mar, frango, linguiça e açafrão.",
+          "preco": 32.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Tortilla Española",
+          "descricao": "Omelete espanhola com batatas e cebolas.",
+          "preco": 18.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Churros con Chocolate",
+          "descricao": "Sobremesa espanhola de churros com chocolate quente.",
+          "preco": 8.9,
+          "desconto": 0
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Restaurante Alemão Biergarten",
+      "status": "aberto",
+      "imagem": "https://cdn.example.com/restaurantes/biergarten.jpg",
+      "categoria": {
+        "id": 12,
+        "nome": "Alemã"
+      },
+      "menu": [
+        {
+          "nome": "Joelho de Porco",
+          "descricao": "Joelho de porco assado com batatas cozidas e chucrute.",
+          "preco": 34.9,
+          "desconto": 0
+        },
+        {
+          "nome": "Salsichas Alemãs",
+          "descricao": "Salsichas alemãs grelhadas com mostarda e pão preto.",
+          "preco": 19.5,
+          "desconto": 0
+        },
+        {
+          "nome": "Apfelstrudel",
+          "descricao": "Sobremesa alemã de massa folhada com maçãs e canela.",
+          "preco": 9.9,
+          "desconto": 0.5
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "nome": "João da Silva",
+    "email": "joao.silva@example.com",
+    "idade": 20,
+    "telefone": "+55 (11) 98765-4321",
+    "endereco": {
+      "logradouro": "Rua das Flores",
+      "numero": "123",
+      "complemento": "Apto 101",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "01234-567",
+      "pais": "Brasil"
+    }
+  }
 }
