@@ -6,15 +6,9 @@
 import server from 'json-server';
 import express from 'express';
 
-import * as path from 'path';
-
-const dbPath = process.env.VERCEL_ENV
-  ? 'db.json'
-  : path.join(__dirname, 'db.json');
+import db from '../db.json';
 
 export const app = server.create();
-
-app.use('/api', express.json()); // Middleware para analisar JSON
 
 app.use(
   server.defaults({
@@ -22,8 +16,10 @@ app.use(
   })
 );
 
+app.use('/api', express.json()); // Middleware para analisar JSON
+
 // Rota padrão para o JSON Server apontando para o arquivo db.json
 app.use('/api', (req, res, next) => {
-  const router = server.router(dbPath);
+  const router = server.router(db);
   router(req, res, next);
 });
