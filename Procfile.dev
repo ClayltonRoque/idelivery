@@ -1,2 +1,0 @@
-nuxt: npx nx serve nuxt --skipNxCache
-fake-api: npx nx serve fake-api --skipNxCache

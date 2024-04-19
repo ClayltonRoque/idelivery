@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  // displayName: 'fake-api',
+  // displayName: 'application',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
-  moduleFileExtensions: ['ts', 'js', 'json', 'html'],
-  coverageDirectory: '../../coverage/apps/fake-api',
+  moduleFileExtensions: ['ts', 'js', 'html'],
+  coverageDirectory: '../../coverage/apps/application',
 };

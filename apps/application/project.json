@@ -1,7 +1,7 @@
 {
-  "name": "fake-api",
+  "name": "application",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/fake-api/src",
+  "sourceRoot": "apps/application/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -9,15 +9,15 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "fake-api:build",
-        "port": 9229
+        "buildTarget": "application:build",
+        "port": 9230
       },
       "configurations": {
         "development": {
-          "buildTarget": "fake-api:build:development"
+          "buildTarget": "application:build:development"
         },
         "production": {
-          "buildTarget": "fake-api:build:production"
+          "buildTarget": "application:build:production"
         }
       }
     }

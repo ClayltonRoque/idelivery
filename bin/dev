@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-exec foreman start -f Procfile.dev "$@"
+exec npx nx run-many -t serve -p application fake-api site admin --parallel 5 "$@"

@@ -5,7 +5,7 @@
 
 import { app } from './api';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 9000;
 
 // Iniciar o servidor JSON Server
 app.listen(PORT, () => {
