@@ -1,1 +1,1 @@
-web: npx nx serve application --prod
+web: npm run start:application:heroku

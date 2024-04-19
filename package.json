@@ -2,7 +2,9 @@
   "name": "@idelivery/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:application:heroku": "nx serve application --prod"
+  },
   "private": true,
   "devDependencies": {
     "@nestjs/schematics": "^10.0.1",
