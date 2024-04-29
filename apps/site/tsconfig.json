@@ -1,14 +1,4 @@
-{
-  "compilerOptions": {},
-  "files": [],
-  "include": [".nuxt/nuxt.d.ts"],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
-  "extends": "../../tsconfig.base.json"
+{ 
+  "include": ["../.."],
+  "extends": "./.nuxt/tsconfig.json"
 }

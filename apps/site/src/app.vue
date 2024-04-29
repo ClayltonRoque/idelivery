@@ -1,15 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { HelloWorld } from '@idelivery/components';
+</script>
 
 <template>
-  <main>
-    <header>
-      <nav>
-        <NuxtLink to="/"> Home </NuxtLink>
-        <NuxtLink to="/about"> About </NuxtLink>
-      </nav>
-    </header>
-    <nuxt-page />
-  </main>
+  <HelloWorld />
 </template>
 
 <style scoped lang="css">

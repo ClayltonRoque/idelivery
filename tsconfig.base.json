@@ -13,8 +13,10 @@
     "lib": ["es2022", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
+    "baseUrl": "./",
+    "paths": {
+      "@idelivery/components": ["libs/components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

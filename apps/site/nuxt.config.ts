@@ -10,14 +10,16 @@ export default defineNuxtConfig({
     host: 'localhost',
     port: 4200,
   },
+  modules: ['@nuxt/ui'],
   typescript: {
     typeCheck: true,
-    tsConfig: {
-      extends: './tsconfig.app.json',
-    },
   },
   imports: {
     autoImport: true,
+  },
+
+  alias: {
+    '@idelivery/components': 'libs/components/src/index.ts',
   },
 
   css: ['~/assets/css/styles.css'],
