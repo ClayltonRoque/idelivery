@@ -12,14 +12,16 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxt/ui'],
   typescript: {
+    tsConfig: {
+      compilerOptions: { baseUrl: '.' },
+    },
     typeCheck: true,
   },
   imports: {
     autoImport: true,
   },
-
   alias: {
-    '@idelivery/components': 'libs/components/src/index.ts',
+    '@idelivery/components': '../../libs/components/src/index.ts',
   },
 
   css: ['~/assets/css/styles.css'],
