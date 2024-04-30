@@ -10,6 +10,18 @@ export default defineNuxtConfig({
     host: 'localhost',
     port: 4200,
   },
+  ui: {
+    icons: ['ri', 'mdi'],
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  colorMode: {
+    preference: 'light',
+  },
   modules: ['@nuxt/ui'],
   typescript: {
     tsConfig: {

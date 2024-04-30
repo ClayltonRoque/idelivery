@@ -44,7 +44,6 @@
     "@vue/eslint-config-typescript": "^11.0.3",
     "@vue/test-utils": "^2.4.1",
     "concurrently": "^8.2.2",
-    "daisyui": "^4.10.2",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-vue": "^9.16.1",
@@ -56,6 +55,7 @@
     "nx": "18.2.4",
     "prettier": "^2.6.2",
     "react-refresh": "^0.10.0",
+    "tailwindcss": "^3.4.3",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.4.2",
@@ -68,6 +68,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@iconify/json": "^2.2.205",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
     "@nestjs/platform-express": "^10.0.2",
@@ -76,6 +77,7 @@
     "express": "^4.18.1",
     "json-server": "^0.17.4",
     "lowdb": "^7.0.1",
+    "postcss": "^8.4.38",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "tslib": "^2.3.0"

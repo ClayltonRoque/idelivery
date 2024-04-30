@@ -1,3 +1,3 @@
-import HelloWorld from './base/HelloWorld.vue';
+import Section from './base/Section.vue';
 
-export { HelloWorld };
+export { Section };

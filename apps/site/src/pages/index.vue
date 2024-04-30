@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
-  <NxWelcome title="site" />
+  <div>Hello World</div>
 </template>
