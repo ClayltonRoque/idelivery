@@ -11,7 +11,7 @@
   @apply pb-[100px];
   &:first-of-type,
   &:first-child {
-    @apply pt-[20px];
+    @apply pt-[60px];
   }
 }
 </style>

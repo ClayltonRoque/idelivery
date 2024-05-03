@@ -58,6 +58,7 @@
       </div>
     </div>
   </UContainer>
+  <slot />
 </template>
 
 <style lang="postcss">
