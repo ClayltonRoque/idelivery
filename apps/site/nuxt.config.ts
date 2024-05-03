@@ -13,15 +13,16 @@ export default defineNuxtConfig({
   ui: {
     icons: ['ri', 'mdi'],
   },
+  colorMode: {
+    preference: 'light',
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  colorMode: {
-    preference: 'light',
-  },
+
   modules: ['@nuxt/ui'],
   typescript: {
     tsConfig: {

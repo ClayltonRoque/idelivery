@@ -1,6 +1,8 @@
+// tailwind.config.js
+
 module.exports = {
   plugins: [require('daisyui')],
   daisyui: {
-    themes: false,
+    darkTheme: false,
   },
 };
