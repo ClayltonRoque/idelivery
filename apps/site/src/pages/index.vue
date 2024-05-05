@@ -3,4 +3,5 @@
   <DeliverySkills />
   <Menu />
   <Testimonials />
+  <AboutApp />
 </template>
