@@ -4,4 +4,5 @@
   <Menu />
   <Testimonials />
   <AboutApp />
+  <Fotter />
 </template>
