@@ -12,17 +12,11 @@ export default defineNuxtConfig({
   },
   ui: {
     icons: ['ri', 'mdi'],
+    safelistColors: ['success'],
   },
   colorMode: {
     preference: 'light',
   },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
   modules: ['@nuxt/ui', '@nuxt/image'],
   typescript: {
     tsConfig: {
@@ -37,7 +31,6 @@ export default defineNuxtConfig({
     '@idelivery/components': '../../libs/components/src/index.ts',
     '@idelivery/config': '../../libs/config/src/index.ts',
   },
-
   css: ['~/assets/css/styles.css'],
 
   vite: {

@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "@idelivery/components": ["libs/components/src/index.ts"]
+      "@idelivery/components": ["libs/components/src/index.ts"],
+      "@idelivery/config": ["libs/config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
