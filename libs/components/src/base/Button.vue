@@ -1,33 +1,21 @@
 <script setup lang="ts">
+import type { PropType } from 'vue';
 defineProps({
   rounded: {
-    type: Boolean,
-    default: false,
+    type: String as PropType<'rounded-full' | 'rounded-sm'>,
   },
-  color: {
+  textColor: {
     type: String,
-    default: 'primary',
   },
 });
 </script>
 
 <template>
   <UButton
-    :color="color"
     :ui="{ rounded: rounded ? 'rounded-full' : 'rounded-sm' }"
     class="button"
-    :class="[`is-${color}`]"
+    :class="[`text-${textColor}`]"
   >
     <slot></slot>
   </UButton>
 </template>
-
-<style scoped>
-.button {
-  &.is-gray {
-    &:hover {
-      @apply bg-primary text-white;
-    }
-  }
-}
-</style>

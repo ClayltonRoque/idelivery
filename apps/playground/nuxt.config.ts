@@ -12,12 +12,14 @@ export default defineNuxtConfig({
   },
   ui: {
     icons: ['ri', 'mdi'],
-    safelistColors: ['success'],
+  },
+  tailwindcss: {
+    configPath: 'tailwind.config',
   },
   colorMode: {
     preference: 'light',
   },
-  modules: ['@nuxt/ui', '@nuxt/image'],
+  modules: ['@nuxt/ui', '@nuxt/image', '@nuxtjs/tailwindcss'],
   typescript: {
     tsConfig: {
       compilerOptions: { baseUrl: '.' },

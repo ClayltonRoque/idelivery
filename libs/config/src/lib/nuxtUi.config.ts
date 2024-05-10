@@ -1,8 +1,8 @@
-import { tailwind } from './tailwind.config';
+import { tailwind } from './tailwindconfig';
 
 console.log(tailwind.theme.extend.colors.success);
 
 export const nuxtUI = {
   primary: 'orange',
-  gray: tailwind.theme.extend.colors.white,
+  gray: 'blue',
 };
