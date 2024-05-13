@@ -2,7 +2,7 @@
 import type { PropType } from 'vue';
 defineProps({
   rounded: {
-    type: String as PropType<'rounded-full' | 'rounded-sm'>,
+    type: String as PropType<'rounded-full' | 'rounded-lg'>,
   },
   textColor: {
     type: String,
@@ -12,8 +12,9 @@ defineProps({
 
 <template>
   <UButton
-    :ui="{ rounded: rounded ? 'rounded-full' : 'rounded-sm' }"
+    :ui="{ rounded: rounded ? 'rounded-full' : 'rounded-lg' }"
     class="button"
+    color="cinnabar"
     :class="[`text-${textColor}`]"
   >
     <slot></slot>
