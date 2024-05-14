@@ -36,6 +36,7 @@ export default defineNuxtConfig({
   alias: {
     '@idelivery/components': '../../libs/components/src/index.ts',
     '@idelivery/config': '../../libs/config/src/index.ts',
+    '@idelivery/config/src/lib/*': '../../libs/config/src/lib/*',
   },
 
   css: ['~/assets/css/styles.css'],

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Section } from '@idelivery/components';
+import { Button } from '@idelivery/components';
 </script>
 
 <template>
@@ -62,10 +63,9 @@ import { Section } from '@idelivery/components';
             class="btn px-3 text-base md:px-6 md:text-lg rounded-full bg-red-500 hover:text-red-500 text-[#fafafa] font-normal"
             >Order Now</UButton
           >
-          <UButton
-            class="btn px-3 text-base md:px-6 md:text-lg rounded-full bg-white hover:text-red-500 text-[#040921] border-red-500 border-x-red-300 border-b-white font-normal"
+          <Button type="primary"
             ><UIcon name="i-ri-play-large-fill" class="text-red-500" /> Order
-            Process</UButton
+            Process</Button
           >
         </div>
       </div>

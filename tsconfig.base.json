@@ -16,7 +16,8 @@
     "baseUrl": "./",
     "paths": {
       "@idelivery/components": ["libs/components/src/index.ts"],
-      "@idelivery/config": ["libs/config/src/index.ts"]
+      "@idelivery/config": ["libs/config/src/index.ts"],
+      "@idelivery/config/src/lib/*": ["libs/config/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

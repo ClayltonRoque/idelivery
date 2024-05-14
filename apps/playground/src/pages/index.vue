@@ -174,7 +174,7 @@ function notify() {
 
         <div class="flex items-end gap-4">
           <Button>Default</Button>
-          <Button type="primary" variant="link"> Primary </Button>
+          <Button type="primary" variant="soft"> Primary </Button>
           <Button type="success" variant="outline" rounded="rounded-full"
             >Success</Button
           >

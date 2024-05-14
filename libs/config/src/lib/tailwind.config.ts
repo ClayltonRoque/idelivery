@@ -1,4 +1,4 @@
-export const tailwind = {
+module.exports = {
   theme: {
     extend: {
       colors: {
@@ -15,6 +15,19 @@ export const tailwind = {
           '900': '#852017',
           '950': '#490b06',
         },
+        malachite: {
+          '50': '#f0fdf0',
+          '100': '#dbfddd',
+          '200': '#b9f9bc',
+          '300': '#82f38a',
+          '400': '#45e351',
+          '500': '#26e134',
+          '600': '#11a81d',
+          '700': '#11841a',
+          '800': '#13681a',
+          '900': '#125519',
+          '950': '#042f09',
+        },
         white: '#ffffff',
         neutral: '#0b0a0b',
         success: '#26e134',
@@ -22,9 +35,9 @@ export const tailwind = {
         danger: '#ba2417',
         info: '#246fba',
       },
+      fontFamily: {
+        primary: ['open-sans', 'sans-serif'],
+      },
     },
-  },
-  fontFamily: {
-    primary: ['open-sans', 'sans-serif'],
   },
 };
