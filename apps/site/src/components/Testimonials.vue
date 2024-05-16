@@ -51,7 +51,9 @@ const array = [
                   repellat possimus delectus! Enim magni officiis est.
                 </h2>
                 <div>
-                  <p class="text-red-500 text-lg font-bold">Claylton Roque</p>
+                  <p class="text-cinnabar-500 text-lg font-bold">
+                    Claylton Roque
+                  </p>
                   <p class="text-xs font-medium">Maracanaú, BR</p>
                 </div>
               </div>

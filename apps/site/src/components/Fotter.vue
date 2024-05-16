@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Section } from '@idelivery/components';
+import { Button } from '@idelivery/components';
 </script>
 <template>
   <div class="pt-[100px] lg:pt-[160px] pb-[30px]">
@@ -9,7 +9,7 @@ import { Section } from '@idelivery/components';
           <div class="flex flex-col lg:items-start gap-4">
             <a
               class="btn btn-ghost text-2xl md:text-3xl gap-0 p-0 tracking-[1px] font-bold"
-              >F<span class="text-red-500">OO</span>D</a
+              >F<span class="text-cinnabar-500">OO</span>D</a
             >
             <p class="lg:w-1/2 text-gray-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nam
@@ -55,9 +55,9 @@ import { Section } from '@idelivery/components';
                 class="rounded-full border-solid border-red-500 border-[1px] opacity-50 -ml-2 px-3 py-1"
                 placeholder="Enter Your Email Adress"
               />
-              <UButton class="rounded-full p-4 bg-red-500"
+              <Button type="primary" rounded="rounded-full" class="p-4"
                 ><UIcon name="i-mdi-email-arrow-right" class="text-xl"
-              /></UButton>
+              /></Button>
             </div>
           </div>
         </div>

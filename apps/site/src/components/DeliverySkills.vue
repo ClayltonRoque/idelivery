@@ -7,7 +7,7 @@ import { Section } from '@idelivery/components';
     <UContainer>
       <div class="flex flex-col justify-center items-center gap-10">
         <div class="flex flex-col items-center text-center">
-          <p class="text-red-500">What we Serve</p>
+          <p class="text-cinnabar-500">What we Serve</p>
           <h2 class="text-[#040921] font-bold text-3xl">
             Your Favorite Food <br />Delivery Partern
           </h2>

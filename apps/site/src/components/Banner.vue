@@ -8,30 +8,32 @@ import { Button } from '@idelivery/components';
     <UContainer class="md:grid md:grid-cols-12">
       <div class="col-span-5 flex flex-col gap-8">
         <div>
-          <span class="bg-red-100 text-red-500 rounded-full px-4 py-2">
+          <span
+            class="bg-cinnabar-100 text-cinnabar-500 rounded-full px-4 py-2"
+          >
             More than Faster
             <UIcon name="i-mdi-food"></UIcon>
           </span>
         </div>
         <div class="text-3xl xl:text-6xl font-bold">
           Be The Fastest In Delivering Your
-          <span class="text-red-500">Food</span>
+          <span class="text-cinnabar-500">Food</span>
         </div>
         <div class="flex md:hidden flex-col h-full justify-center">
           <div
             class="mb-[-100px] ml-3 lg:ml-10 w-[120px] lg:w-[180px] h-[160px] bg-[#fafafa] rounded-xl flex flex-col justify-center items-center p-4 lg:p-6 gap-5 z-10"
           >
             <div class="flex flex-col items-center gap-1">
-              <img src="../public/orange.jpg" />
+              <img src="../public/orange.png" />
               <div class="text-sm md:text-base">Fresh Orange</div>
               <div class="w-[40px] h-[3px] bg-orange-300"></div>
               <div class="font-black text-lg">$44.60</div>
               <div class="text-sm md:text-base text-gray-400">
                 Free Shipping
               </div>
-              <div class="bg-red-500 p-3 rounded-xl flex justify-center">
+              <Button type="primary" class="p-3 rounded-xl flex justify-center">
                 <UIcon name="i-mdi-cart-plus" class="text-1xl text-white" />
-              </div>
+              </Button>
             </div>
           </div>
           <img src="../public/womanModel.jpg" class="rounded" />
@@ -59,13 +61,19 @@ import { Button } from '@idelivery/components';
           cupiditate voluptatum natus.
         </div>
         <div class="flex gap-5">
-          <UButton
-            class="btn px-3 text-base md:px-6 md:text-lg rounded-full bg-red-500 hover:text-red-500 text-[#fafafa] font-normal"
-            >Order Now</UButton
+          <Button
+            type="primary"
+            class="btn px-3 text-base md:px-6 md:text-lg font-normal"
+            :rounded="'rounded-full'"
+            >Order Now</Button
           >
-          <Button type="primary"
-            ><UIcon name="i-ri-play-large-fill" class="text-red-500" /> Order
-            Process</Button
+          <Button
+            type="primary"
+            variant="outline"
+            rounded="rounded-full"
+            class="text-base"
+          >
+            <UIcon name="i-ri-play-large-fill" class="" /> Order Process</Button
           >
         </div>
       </div>
@@ -76,14 +84,14 @@ import { Button } from '@idelivery/components';
           class="mb-[-100px] ml-5 lg:ml-10 w-[140px] lg:w-[180px] h-[200px] bg-[#fafafa] rounded-xl flex flex-col justify-center items-center p-6 gap-5 z-10"
         >
           <div class="flex flex-col items-center gap-1">
-            <img src="../public/orange.jpg" />
+            <img src="../public/orange.png" />
             <div>Fresh Orange</div>
             <div class="w-[40px] h-[3px] bg-orange-300"></div>
             <div class="font-black text-lg">$44.60</div>
             <div class="text-sm text-gray-400">Free Shipping</div>
-            <div class="bg-red-500 p-4 rounded-xl flex justify-center">
+            <Button type="primary" class="p-4 rounded-xl flex justify-center">
               <UIcon name="i-mdi-cart-plus" class="text-2xl text-white" />
-            </div>
+            </Button>
           </div>
         </div>
         <img src="../public/womanModel.jpg" class="rounded" />

@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Button } from '@idelivery/components';
+</script>
 
 <template>
   <UContainer class="Idelivery-layout">
@@ -33,7 +35,7 @@
         </div>
         <a
           class="btn btn-ghost text-2xl md:text-3xl gap-0 p-0 tracking-[1px] font-bold"
-          >F<span class="text-red-500">OO</span>D</a
+          >F<span class="text-cinnabar-500">OO</span>D</a
         >
       </div>
       <div class="navbar-center hidden lg:flex items-center">
@@ -51,10 +53,12 @@
         <a class="hidden md:flex">
           <UIcon name="i-ri-shopping-basket-line" class="icon-large" />
         </a>
-        <a
-          class="btn px-3 text-base md:px-6 md:text-lg rounded-full bg-red-500 hover:text-red-500 text-[#fafafa] font-normal"
+        <Button
+          type="primary"
+          rounded="rounded-full"
+          class="btn px-3 text-base md:px-6 md:text-lg font-normal"
           >Sign in <UIcon name="i-ri-arrow-right-line" class="text-xl"
-        /></a>
+        /></Button>
       </div>
     </div>
   </UContainer>
@@ -65,7 +69,7 @@
 .Idelivery-layout {
   .navbar-center {
     li:hover {
-      @apply text-red-500;
+      @apply text-cinnabar-500;
     }
   }
   .navbar-end {
