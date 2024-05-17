@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Section } from '@idelivery/components';
+import { Section, Card } from '@idelivery/components';
 </script>
 
 <template>
@@ -71,61 +71,72 @@ import { Section } from '@idelivery/components';
         <div
           class="hidden md:flex flex-col md:flex-row justify-center gap-4 lg:gap-12"
         >
-          <div class="card w-60 xl:w-80 h-80 bg-base-100">
-            <figure class="px-4 pt-6">
-              <img
-                src="../public/easyToOrder.png"
-                alt="Shoes"
-                class="rounded-xl w-30 h-40"
-              />
-            </figure>
-            <div class="card-body items-center text-center p-4">
-              <h2 class="card-title">Fastest Delivery</h2>
-              <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                labore
-              </p>
-            </div>
-          </div>
-          <div class="card w-60 xl:w-80 bg-base-100 somber">
-            <figure class="px-4 pt-6">
-              <img
-                src="../public/fastDeliveryy.png"
-                alt="Shoes"
-                class="rounded-xl w-30 h-40"
-              />
-            </figure>
-            <div class="card-body items-center text-center p-4">
-              <h2 class="card-title">Fastest Delivery</h2>
-              <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                labore
-              </p>
-            </div>
-          </div>
-          <div class="card w-60 xl:w-80 bg-base-100">
-            <figure class="px-4 pt-6">
-              <img
-                src="../public/pizzaiolo.jpg"
-                alt="Shoes"
-                class="rounded-xl w-30 h-40"
-              />
-            </figure>
-            <div class="card-body items-center text-center p-4">
-              <h2 class="card-title">Fastest Delivery</h2>
-              <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                labore
-              </p>
-            </div>
-          </div>
+          <Card class="w-60 xl:w-80 h-80 bg-base-100 somber">
+            <template #header>
+              <figure class="px-4 pt-6">
+                <img
+                  src="@/public/easyToOrder.png"
+                  alt="Shoes"
+                  class="rounded-xl w-30 h-40"
+                />
+              </figure>
+            </template>
+            <template #default>
+              <div class="card-body items-center text-center p-4">
+                <h2 class="card-title">Fastest Delivery</h2>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  labore
+                </p>
+              </div>
+            </template>
+          </Card>
+          <Card class="w-60 xl:w-80 bg-base-100 somber">
+            <template #header>
+              <figure class="px-4 pt-6">
+                <img
+                  src="@/public/fastDeliveryy.png"
+                  alt="Shoes"
+                  class="rounded-xl w-30 h-40"
+                /></figure
+            ></template>
+            <template #default>
+              <div class="card-body items-center text-center p-4">
+                <h2 class="card-title">Fastest Delivery</h2>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  labore
+                </p>
+              </div></template
+            >
+          </Card>
+          <Card class="w-60 xl:w-80 bg-base-100 somber">
+            <template #header>
+              <figure class="px-4 pt-6">
+                <img
+                  src="@/public/pizzaiolo.jpg"
+                  alt="Shoes"
+                  class="rounded-xl w-30 h-40"
+                />
+              </figure>
+            </template>
+            <template #default>
+              <div class="card-body items-center text-center p-4">
+                <h2 class="card-title">Fastest Delivery</h2>
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  labore
+                </p>
+              </div>
+            </template>
+          </Card>
         </div>
       </div>
     </UContainer>
   </Section>
 </template>
 <style lang="postcss">
-.somber {
+.somber:hover {
   -webkit-box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.75);

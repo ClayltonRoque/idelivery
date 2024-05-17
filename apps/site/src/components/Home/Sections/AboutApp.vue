@@ -9,11 +9,11 @@ import { Section } from '@idelivery/components';
         class="flex flex-col md:flex-row justify-center md:gap-10 lg:gap-24 items-center"
       >
         <div class="hidden md:flex">
-          <NuxtImg src="../public/MobileApp.png"></NuxtImg>
+          <NuxtImg src="/MobileApp.png"></NuxtImg>
         </div>
         <div class="flex flex-col gap-4">
           <div>
-            <p class="text-red-500 text-center">Download our app</p>
+            <p class="text-cinnabar-500 text-center">Download our app</p>
             <h2
               class="text-[#040921] font-bold text-2xl md:text-3xl text-center"
             >
@@ -26,13 +26,13 @@ import { Section } from '@idelivery/components';
             elit. Ipsa iusto saepe neque eius .
           </p>
           <div class="flex justify-center md:hidden">
-            <NuxtImg src="../public/MobileApp.png"></NuxtImg>
+            <NuxtImg src="/MobileApp.png"></NuxtImg>
           </div>
           <div class="flex md:grid grid-cols-4 gap-4 mt-8">
             <a
               class="bg-black col-span-2 flex items-center pr-2 lg:pr-6 h-20 rounded-md"
             >
-              <NuxtImg src="../public/playstoreIcon.png" class="w-12" />
+              <NuxtImg src="/playstoreIcon.png" class="w-12" />
               <div class="text-white">
                 <p class="uppercase text-xs text-center">Download on the</p>
                 <h2 class="text-sm lg:text-xl text-bold text-center">
@@ -44,7 +44,7 @@ import { Section } from '@idelivery/components';
             <a
               class="bg-black col-span-2 flex items-center pr-2 lg:pr-6 h-20 rounded-md"
             >
-              <NuxtImg src="../public/playstoreIcon.png" class="w-12" />
+              <NuxtImg src="/playstoreIcon.png" class="w-12" />
               <div class="text-white">
                 <p class="uppercase text-xs text-center">Download on the</p>
                 <h2 class="text-sm lg:text-xl text-bold text-center">

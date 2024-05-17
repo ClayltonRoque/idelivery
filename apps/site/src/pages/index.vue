@@ -1,8 +1,10 @@
 <template>
-  <Banner />
-  <DeliverySkills />
-  <Menu />
-  <Testimonials />
-  <AboutApp />
-  <Fotter />
+  <div>
+    <HomeSectionsBanner />
+    <HomeSectionsDeliverySkills />
+    <HomeSectionsMenu />
+    <HomeSectionsTestimonials />
+    <HomeSectionsAboutApp />
+    <BaseFotter />
+  </div>
 </template>

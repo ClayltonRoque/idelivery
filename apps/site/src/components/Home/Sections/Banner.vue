@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Section } from '@idelivery/components';
+import { Card, Section } from '@idelivery/components';
 import { Button } from '@idelivery/components';
 </script>
 
@@ -24,7 +24,7 @@ import { Button } from '@idelivery/components';
             class="mb-[-100px] ml-3 lg:ml-10 w-[120px] lg:w-[180px] h-[160px] bg-[#fafafa] rounded-xl flex flex-col justify-center items-center p-4 lg:p-6 gap-5 z-10"
           >
             <div class="flex flex-col items-center gap-1">
-              <img src="../public/orange.png" />
+              <img src="@/public/orange.png" />
               <div class="text-sm md:text-base">Fresh Orange</div>
               <div class="w-[40px] h-[3px] bg-orange-300"></div>
               <div class="font-black text-lg">$44.60</div>
@@ -36,7 +36,7 @@ import { Button } from '@idelivery/components';
               </Button>
             </div>
           </div>
-          <img src="../public/womanModel.jpg" class="rounded" />
+          <img src="@/public/womanModel.jpg" class="rounded" />
 
           <div
             class="items-end mt-[-40px] w-[120px] lg:w-[180px] ml-3 lg:ml-10 z-10"
@@ -73,18 +73,18 @@ import { Button } from '@idelivery/components';
             rounded="rounded-full"
             class="text-base"
           >
-            <UIcon name="i-ri-play-large-fill" class="" /> Order Process</Button
+            <UIcon name="i-ri-play-large-fill" /> Order Process</Button
           >
         </div>
       </div>
 
       <div class="col-span-1"></div>
       <div class="hidden col-span-6 md:flex flex-col h-full justify-center">
-        <div
-          class="mb-[-100px] ml-5 lg:ml-10 w-[140px] lg:w-[180px] h-[200px] bg-[#fafafa] rounded-xl flex flex-col justify-center items-center p-6 gap-5 z-10"
+        <Card
+          class="lg:ml-10 lg:w-[180px] w-[140px] mb-[-100px] ml-5 h-[200px] bg-base-100 rounded-xl flex flex-col justify-center items-center p-6 gap-5 z-10"
         >
           <div class="flex flex-col items-center gap-1">
-            <img src="../public/orange.png" />
+            <img src="@/public/orange.png" />
             <div>Fresh Orange</div>
             <div class="w-[40px] h-[3px] bg-orange-300"></div>
             <div class="font-black text-lg">$44.60</div>
@@ -93,14 +93,14 @@ import { Button } from '@idelivery/components';
               <UIcon name="i-mdi-cart-plus" class="text-2xl text-white" />
             </Button>
           </div>
-        </div>
-        <img src="../public/womanModel.jpg" class="rounded" />
+        </Card>
+        <img src="@/public/womanModel.jpg" class="rounded-xl" />
 
         <div
           class="items-end mt-[-40px] w-[140px] lg:w-[180px] ml-5 lg:ml-10 z-10"
         >
           <div
-            class="rounded-lg bg-[#fafafa] flex items-center justify-center px-4 py-3 gap-3"
+            class="rounded-lg bg-base-100 flex items-center justify-center px-4 py-3 gap-3"
           >
             <div>
               <UIcon name="i-ri-alarm-line" class="text-4xl text-green-400" />
