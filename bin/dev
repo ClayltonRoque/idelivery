@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-exec npx nx run-many -t serve -p application fake-api site admin --parallel 5 "$@"
+exec npx nx run-many -t serve -p application fake-api playground site admin --parallel 5 "$@"
